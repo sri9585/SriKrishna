@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css" media="screen and (max-width:530px)">
+</head>
+<body>
+        <nav class="navbar">
+            <a href="#"class="logo">‎ ‎ ‎ KRISHNA.</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    
+    <section id="home">
+        <a href="#home"></a>
+        <div class="main">
+            <h1 class="headings">I AM <br> SRI KRISHNA</h1>
+            <button class="btn">
+                HIRE ME
+            </button>
+        </div>
+    </section>
+    
+    <section id="about">
+        
+        <a href="#about"></a>
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+            <img src="portfolio/me1.jpeg" alt="">
+            <div id="intro">
+                <h2>SRI KRISHNA</h2>
+                <p>
+                    
+Hello! I'm Sri Krishna, a high school graduate from Sri Sankara Vidhaysahram, currently pursuing in KCG College of Technology. I specialize in Flutter, ReactJS, JavaScript, MongoDB, and Node.js. Passionate about software development, I strive to create seamless web and mobile applications with engaging user experiences. Eager to contribute my skills to meaningful projects and collaborate with teams. Excited about the future possibilities in technology!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <a href="#portfolio"></a>
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <img src="portfolio/1.jpg" alt="">
+            <img src="portfolio/2.jpg" alt="">
+            <img src="portfolio/3.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="services">
+        <a href="#services"></a>
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="portfolio/web.png" alt="">
+                <h1 class="headings">WEBSITE DESIGNER</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo exercitationem dolore esse laboriosam dolorum quam. Accusamus nemo id velit debitis, eius beatae voluptatibus eveniet cupiditate nesciunt dolorum fugit autem exercitationem!</p>
+            </div>
+            <div class="box">
+                <img src="portfolio/phone.png" alt="">
+                <h1 class="headings">APP DEVELOPER</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo exercitationem dolore esse laboriosam dolorum quam. Accusamus nemo id velit debitis, eius beatae voluptatibus eveniet cupiditate nesciunt dolorum fugit autem exercitationem!</p>
+            </div>
+            <div class="box">
+                <img src="portfolio/ui.png" alt="">
+                <h1 class="headings">UI/UX DESIGNER</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo exercitationem dolore esse laboriosam dolorum quam. Accusamus nemo id velit debitis, eius beatae voluptatibus eveniet cupiditate nesciunt dolorum fugit autem exercitationem!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <a href="#contact"></a>
+            <h1 class="headings">CONTACT</h1>
+            <form action="" class="form" onsubmit="sendmail(); reset(); return false;">
+                <input type="text" name="name" class="input" placeholder="Enter Your Name">
+                <input id="email" type="email" name="email" class="input" placeholder="Enter Your Email Address">
+                <input type="tel" name="phone" class="input" placeholder="Enter Your Mobile Number" maxlength="10" minlength="10">
+                <textarea name="msg" id="" cols="30" rows="10" placeholder="Send Message"></textarea>
+                <input type="submit" value="send" id="send">
+            </form>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "srik9585a@gmail.com",
+                Password : "Srikrishna090704!",
+                To : 'srik9585a@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+                );
+        }
+    </script>
+</body>
+</html>
+
